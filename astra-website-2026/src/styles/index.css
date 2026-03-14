@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Geologica', 'Zalando Sans SemiExpanded', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,6 +21,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+  max-width: 100vw;
   min-height: 100vh;
 }
 
@@ -48,13 +49,12 @@ nav {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: auto;
+  width: fit-content;
   gap: 15px;
   margin: 0 5px 0 0;
   padding: 0 5px 0 0;
   position: relative;
   height: 80px;
-  border-right: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .astra--logo {
@@ -135,19 +135,19 @@ nav a:hover, nav a:active {
 .home-page-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 
 .home-page--hero-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
 .home-page--hero-video {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -206,5 +206,47 @@ nav a:hover, nav a:active {
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #090909;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 300px;
+  font-size: 0.9em;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.sponsor-section {
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lockheed-logo {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.contact-and-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  gap: 60px;
+  width: min(1200px, 92vw);
+  margin-top: 40px;
+}
+
+#lead-role {
+  color: #FFB81C;
+  font-weight: 700;
 }
 

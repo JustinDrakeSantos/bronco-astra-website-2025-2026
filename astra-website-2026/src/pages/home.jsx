@@ -10,7 +10,7 @@ function Home() {
                     </video> 
                 </div>
                 <div className="home-page--about-container">
-                    <h1 className="home-page--about-title">LEARN BY DOING.</h1>
+                    <h1 className="home-page--about-title">BECOME BY DOING.</h1>
                     <div className="about-container--cards">
                         <div className="about--who">
                             <h3>Who We Are</h3>

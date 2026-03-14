@@ -6,6 +6,7 @@ import Timeline from './timeline.jsx'
 import Testing from './testing.jsx'
 import Tips from './tips.jsx'
 import Navbar from '../components/navbar.jsx'
+import Footer from '../components/footer.jsx'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/testing' element={<Testing/>}/>
           <Route path='/tips' element={<Tips/>}/>
       </Routes>
+      <Footer/>
     </>
     
   )
