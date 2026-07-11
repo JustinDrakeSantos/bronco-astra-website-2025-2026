@@ -1,0 +1,141 @@
+.timeline-hero {
+  position: relative;
+  background: url("../assets/timelineHeroImage.jpg") center center/cover no-repeat;
+  height: 350px;
+  left: 20px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  padding-top: 350px;
+  margin-top: 0;
+}
+
+.timeline-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+
+.timeline-container--title {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 80%;
+  max-width: 900px;
+  padding: 32px 40px;
+  z-index: 3;
+}
+
+.timeline-container--title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFB81C;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-container--title p {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #005030;
+  line-height: 1.6;
+  
+  left: 45px;
+  bottom: -40px;
+  z-index: 3;
+  max-width: 600px;
+}
+
+.timeline-container {
+  position: relative;
+  padding-top: 120px;
+}
+
+.timeline-title,
+.timeline-title-description,
+.timeline-event-date,
+.timeline-description {
+  color: inherit;
+}
+
+.timeline-card {
+  cursor: pointer;
+}
+
+.timeline-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0;
+  border-radius: 8px;
+  display: block;
+}
+
+.timeline-expand-btn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  width: 120px;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+.vertical-timeline-element-content::before {
+  box-shadow: none !important;
+}
+
+.timeline-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.timeline-card-content-expanded {
+  flex-direction: column;
+}
+
+.timeline-left {
+  flex: 1;
+}
+
+.timeline-right {
+  flex-shrink: 0;
+}
+
+.timeline-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.timeline-filter-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.timeline-filter-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  width: 120px;
+  cursor: pointer;
+  font-weight: 700;
+}

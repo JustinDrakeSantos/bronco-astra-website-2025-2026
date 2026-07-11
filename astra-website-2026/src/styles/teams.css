@@ -348,3 +348,17 @@ img {
 #leads, #uav, #payload, #gnc, #obj-rec, #obs-avo, #sys, #advisors, #sponsors {
     scroll-margin-top: var(--nav-height);
 }
+
+.uavd-about,
+.payload-about,
+.gnc-about,
+.obj-rec-about,
+.obs-avo-abou,
+.systems-about {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    max-width: 800px;
+    text-align: left;
+}
+

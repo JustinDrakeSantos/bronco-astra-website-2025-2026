@@ -1,18 +1,20 @@
 import { useState } from "react";
 import "../styles/teams.css";
 import picture from "../assets/picture-placeholder.png";
-import team from "../assets/placeholder-team-picture.png";
-import danielle from "../assets/danielle-king-img.png";
-import ashton from "../assets/ashton-vogel-img.png";
-import alissa from "../assets/alissa-vis.png";
-import ben from "../assets/ben-systems.png";
-import stephen from "../assets/stephen-uav-design.png";
-import waamiq from "../assets/waamiq-gnc.png";
-import ryan from "../assets/ryan-obj-rec.png";
-import kevin from "../assets/kevin-obs-avo.png";
+import team from "../assets/astra-team-photo.JPG";
+import danielle from "../assets/danielle.png";
+import ashton from "../assets/ashton.JPG";
+import alissa from "../assets/alissa.JPG";
+// import ben from "../assets/ben-systems.png";
+// import stephen from "../assets/stephen-uav-design.png";
+// import waamiq from "../assets/waamiq-gnc.png";
+import ryan from "../assets/ryan-obj-rec.JPG";
+// import kevin from "../assets/kevin-obs-avo.png";
 import bhandari from "../assets/bhandari-advisor.png";
-import joshua from "../assets/joshua-estrada-software-mentor.png";
-import max from "../assets/max-software-mentor.png";
+// import joshua from "../assets/joshua-estrada-software-mentor.png";
+// import max from "../assets/max-software-mentor.png";
+import justin from "../assets/justin-object-rec.JPG";
+import michael from "../assets/michael-obj-rec.JPG";
 
 function CardFront({ image, name, role, showHint = false }) {
   return (
@@ -66,7 +68,6 @@ function FlipCard({ image, name, role, backText }) {
         <div className="flip-card__face flip-card__back">
           <h3>{name}</h3>
           <p className="flip-card__role">{role}</p>
-          <p className="flip-card__text">{backText}</p>
           {Array.isArray(backText) ? (
             backText.map((paragraph, index) => (
               <p key={index} className="flip-card__text">
@@ -141,7 +142,7 @@ function Team() {
               <a href="#sys">Systems</a>
             </li>
             <li>
-              <a href="#advisors">Advisors</a>
+              <a href="#advisors">Advisors/Mentors</a>
             </li>
             <li>
               <a href="#sponsors">Sponsors</a>
@@ -161,11 +162,15 @@ function Team() {
                 name="Ashton Vogel"
                 role="Electrical & Software Lead"
                 backText={[
-                  "Ashton began his journey on the team as a member of both the Electrical Integration and Autonomous Navigation subteams before being promoted to lead. He is a senior Electrical Engineering major with hands-on experience in amplifier design, embedded systems, and circuit-level troubleshooting. His background has made him a key contributor to integrating the drone’s complex electrical systems.",
+                  "As our Electrical / Software Project Lead, Ashton guides the technical development of the drone’s electrical and autonomous capabilities, while ensuring that all subsystems integrate into a cohesive and high-performing system. His leadership centers on defining how the aircraft senses, interprets, and responds to its environment, ensuring reliable performance in dynamic, real-world mission conditions. ",
 
-                  "As the Electrical Integration Lead, Ashton oversees the drone’s wiring, power distribution, and component connectivity, ensuring all hardware functions reliably and efficiently. He also collaborates closely with the Autonomous Navigation team, focusing on the configuration and optimization of the Pixhawk and Ardupilot systems for smooth autonomous operation. Ashton’s dual role enables him to support critical communication between flight control and onboard electronics.",
+                  "With a background in Electrical Engineering and hands-on experience in embedded systems, circuit design, and system integration, Ashton brings strong technical expertise to the team. His work spans onboard electronics, flight control architecture, and perception-driven functionality, enabling the aircraft to process environmental data and make real-time decisions. His experience with embedded platforms and system-level troubleshooting allows him to connect low-level implementation with overall system behavior. ",
 
-                  "In his free time, Ashton enjoys weightlifting, video games, and studying the Bible. He is motivated by the team’s growth and technical achievements, and is excited to see the project come to life at competition in Maryland.",
+                  "His leadership is reflected in his driven approach, setting technical direction and ensuring that all components function together as an integrated architecture. He plays a key role in guiding design decisions, resolving complex technical challenges, and maintaining consistency between sensing, control, and actuation throughout development.",
+
+                  "As a strong advocate for hands-on engineering and iterative validation, Ashton finds fulfillment in refining complex systems through testing and integration. He is motivated by the challenge of transforming advanced autonomy concepts into a dependable, flight-ready system and takes pride in driving the technical excellence of the team. ",
+
+                  "Outside of the project, Ashton enjoys weightlifting, video games (at one point considered going pro in Overwatch), and studying the Bible. He is excited to see the team’s work come to life at competition and is driven to deliver a robust and high-performing aircraft. "
                 ]}
               />
               <FlipCard
@@ -173,11 +178,16 @@ function Team() {
                 name="Danielle King"
                 role="Structural & Systems Lead"
                 backText={[
-                  "Danielle is a third-year Aerospace Engineering student with a focus on Systems Engineering. Her passion for organization and efficiency made her a natural fit to lead the Systems team, where she manages tasks that support the project across all subteams. Her role includes scheduling, documentation, risk analysis, trade studies, and facilitating communication between leads to ensure a streamlined and cohesive workflow.",
+                  "As our Structural / Systems Project Lead, Danielle guides the development of an integrated and mission-ready aircraft, while maintaining program organization and alignment. Her leadership ensures that design decisions across the aircraft support performance, safety, and overall mission success, while keeping the team coordinated and on track.",
 
-                  "As Systems Lead, Danielle helps maintain project alignment by tracking milestones and deliverables, while also guiding cross-team integration to prevent delays and misunderstandings. Her efforts keep the team grounded, ensuring that technical progress matches the overall mission timeline.",
+                  "With a background in aerospace engineering and industry experience at Northrop Grumman, Danielle brings a practical and systems-level perspective to the team. Her experience includes working within structured engineering environments, contributing to system-level problem solving, and taking on leadership roles in prior technical projects, allowing her to approach complex design challenges with both organization and clarity.",
 
-                  "In her free time, Danielle enjoys traveling, baking, exploring new foods, and playing video games. She’s excited to apply the hands-on experience from this project to her upcoming internship at Northrop Grumman and is proud to see the drone come together for the competition in Maryland.",
+                  "Within the project, her leadership is defined by her emphasis on coordination and consistency, setting high-level goals, managing timelines, working closely with the project advisor, and coordinating budget decisions. She focuses on keeping the team aligned without excessive pressure, fostering a collaborative environment where steady progress and clear communication drive results.",
+
+                  "She takes pride in building a team culture that values balance, accountability, and mutual support, ensuring that members can contribute effectively without burnout. She is motivated by the challenge of bringing together diverse technical efforts into a cohesive and competition-ready aircraft.",
+
+                  "Outside of the project, Danielle enjoys traveling, baking, exploring new foods, and playing video games (Overcooked :D). She is excited to apply the experience gained from this project to her upcoming full-time position after graduation and looks forward to seeing the team’s work come together at competition.",
+                  
                 ]}
               />
             </div>
@@ -188,16 +198,24 @@ function Team() {
             </h2>
             <section className="UAVD-lead">
               <FlipCard
-                image={stephen}
+                image={ picture }
                 name="Stephen Posner"
                 role="UAV Design Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Stephen was a member of the UAV Design team for a year and was promoted to the lead position this season. He is an Aerospace Engineering student with a minor in Materials Engineering, with experience in structural design, manufacturing, and mechanical system development. Through his involvement in the project and coursework, he has developed a strong understanding of iterative design, and how material selection, and structural design influences performance, durability, and overall system reliability.",
+                  "As the UAV Design Lead, Stephen is responsible for the design, manufacturing, assembly, and maintenance of the UAV. He oversees the development of the drone’s airframe and physical systems, ensuring that designs are optimized for strength, weight, and performance. His role focuses on translating design concepts into a manufacturable and reliable platform, while supporting integration with other subsystems to ensure cohesiveness, and adaptability for future modifications.",
+                  "In his free time, Stephen enjoys traveling with friends, cooking, and working on his 1995 Miata whenever he finds the time. He is excited to see the team’s work come together and looks forward to competing in Tulsa, Oklahoma.",
+                ]}
               />
               <FlipCard
                 image={alissa}
                 name="Alissa Everman"
                 role="Vehicle Integration Systems Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Alissa began as a member of the Systems Engineering team for a year and was promoted to a lead position this season. She is an Aerospace Engineering student with experience in system-level integration and cross-team coordination, having worked closely with multiple subteams in the previous project season. In addition to her academic experience, she has overcome design challenges and integrated systems through rigorous coursework and industry exposure through an internship with Northrop Grumman Mission Systems.",
+                  "As the Vehicle Integrated Systems Lead, Alissa is responsible for overseeing the integration of the UAV Design and Payload subteams, ensuring that parallel development efforts remain aligned and compatible. She coordinates tasks across subteams, tracks progress on key deliverables, and supports design decisions to ensure that all subsystems come together cohesively. Her role focuses on maintaining consistent progress across both teams and preventing integration challenges by facilitating communication and alignment throughout all phases of development.",
+                  "In her free time, Alissa enjoys reading, outdoor activities (pickleball!!!), playing video games, and spending time with her pets and friends. She is excited to see the team’s work come together and looks forward to competing in Oklahoma.",
+                ]}
               />
             </section>
             <section className="UAVD-members">
@@ -237,6 +255,16 @@ function Team() {
                 role="UAV Design Member"
               />
             </section>
+            <div className="uavd-about">
+              <section className="uav-sec-one">
+                <img src={picture}></img>
+                <p>The UAV Design subteam is responsible for developing the physical platform that supports all onboard systems. This includes the airframe, propulsion system, and component layout, with a focus on balancing weight, strength, and aerodynamic performance. The team oversees manufacturing, assembly, and maintenance, ensuring the aircraft remains structurally sound and flight-ready throughout testing and competition. </p>
+              </section>
+              <section className="uav-sec-two">
+                <p>Their work directly impacts flight stability, endurance, and the ability to carry and support all subsystems. A well-designed platform enables consistent performance, while poor structural decisions can limit or compromise the entire system. UAV Design serves as the foundation that allows every other subteam’s work to be successfully integrated and operated in flight.</p>
+                <img src={picture}></img>
+              </section>
+            </div>
           </div>
           <div className="payload-container" id="payload">
             <h2 className="payload--title">Payload</h2>
@@ -245,13 +273,22 @@ function Team() {
                 image={picture}
                 name="Robbie Adriano"
                 role="Payload Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Robbie joined the team this season and was promoted to a lead position in his first year. He is a Mechanical Engineering student with an interest in hands-on design and testing, bringing a practical and team-oriented approach to engineering challenges. Through his involvement in the project, he has developed experience in coordinating team efforts and supporting the development of reliable mechanical systems.",
+                  "As the Payload Lead, Robbie is responsible for leading the design and testing of the payload delivery system, ensuring it integrates safely with the aircraft without interfering with other components or affecting flight performance. He coordinates meetings, delegates tasks, and sets deadlines to keep the team on track, while also fostering a positive and collaborative team environment. His role focuses on improving system reliability and consistency through testing and iteration, while maintaining close communication with other subteams to ensure full integration across the aircraft.",
+                  "In his free time, Robbie enjoys running, playing video games, tennis, and traveling. He is excited to contribute to the team’s success and looks forward to competing.",
+                ]}
               />
               <FlipCard
                 image={alissa}
                 name="Alissa Everman"
                 role="Vehicle Integration Systems Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Alissa began as a member of the Systems Engineering team for a year and was promoted to a lead position this season. She is an Aerospace Engineering student with experience in system-level integration and cross-team coordination, having worked closely with multiple subteams in the previous project season. In addition to her academic experience, she has overcome design challenges and integrated systems through rigorous coursework and industry exposure through an internship with Northrop Grumman Mission Systems.",
+                  "As the Vehicle Integrated Systems Lead, Alissa is responsible for overseeing the integration of the UAV Design and Payload subteams, ensuring that parallel development efforts remain aligned and compatible. She coordinates tasks across subteams, tracks progress on key deliverables, and supports design decisions to ensure that all subsystems come together cohesively. Her role focuses on maintaining consistent progress across both teams and preventing integration challenges by facilitating communication and alignment throughout all phases of development.",
+                  "In her free time, Alissa enjoys reading, outdoor activities (pickleball!!!), playing video games, and spending time with her pets and friends. She is excited to see the team’s work come together and looks forward to competing in Oklahoma.",
+
+                ]}
               />
             </section>
             <section className="payload-members">
@@ -260,6 +297,16 @@ function Team() {
                 <MemberCard image={picture} name="Jose A. Mora" role="Payload Member" />
                 <MemberCard image={picture} name="Aiden Sanchez" role="Payload Member" />
             </section>
+            <div className="payload-about">
+              <section className="payload-sec-one">
+                <p>The Payload subteam develops the systems responsible for delivering mission-critical objects with accuracy and consistency. This includes designing drop mechanisms, mounting systems, and ensuring safe integration with the aircraft without interfering with flight performance or other components. The team focuses heavily on testing and iteration to improve reliability under real flight conditions.</p>
+                <img src={picture}></img>
+              </section>
+              <section className="payload-sec-two">
+                <img src={picture}></img>
+                <p>Payload plays a direct role in mission success, as accurate and repeatable delivery is required to meet competition objectives. The team works closely with navigation and object recognition systems to ensure that targeting, timing, and deployment are aligned. Without a reliable payload system, the aircraft cannot fully complete its mission, regardless of its autonomy or flight capability.</p>
+              </section>
+            </div>
           </div>
           <div className="GNC-container" id="gnc">
             <h2 className="gnc--title">
@@ -267,10 +314,14 @@ function Team() {
             </h2>
             <section className="gnc-lead">
               <FlipCard
-                image={waamiq}
+                image={ picture }
                 name="Waamiq Sharrar"
                 role="GNC Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Waamiq was a member of the GNC for two years before becoming the lead of that same team. He is a Computer Engineering student with experience in electrical and software systems, with a focus on avionics and system integration. Through his involvement in the project and continued work on personal engineering projects, he has developed a strong foundation in designing and implementing systems that enable reliable and autonomous operation.",
+                  "As the Guidance, Navigation, and Control (GNC) Lead, Waamiq is responsible for overseeing the development and integration of the drone’s avionics and control systems, ensuring that all components work together to support stable and autonomous flight. He manages electrical system integration across subteams, supports the implementation of control logic, and ensures that onboard systems are properly configured and powered for sustained operation. His role focuses on enabling reliable system behavior and advancing the team’s autonomy capabilities through cohesive electrical and software integration.",
+                  "In his free time, Waamiq enjoys spending time with friends, playing video games, and working on personal electrical and software projects. He is excited to continue developing his technical skills and looks forward to seeing the team’s system perform at competition.",
+                ]}
               />
             </section>
             <section className="gnc-members">
@@ -283,8 +334,17 @@ function Team() {
                 <MemberCard image={picture} name="Francisco Pulido" role="GNC Member" />
                 <MemberCard image={picture} name="Stephen Liu" role="GNC Member" />
                 <MemberCard image={picture} name="Francis Saspa" role="GNC Member" />
-                
             </section>
+            <div className="gnc-about">
+              <section className="gnc-sec-one">
+                <img src={picture}></img>
+                <p>The GNC subteam develops the algorithms and control logic that allow the aircraft to navigate and execute its mission autonomously. This includes waypoint navigation, search grid pathing, autonomous takeoff and landing, and overall flight control behavior. The team is responsible for translating mission objectives into precise and repeatable flight actions.</p>
+              </section>
+              <section className="gnc-sec-two">
+                <p>GNC is essential to system functionality, as it connects all high-level mission tasks to physical aircraft movement. Even with accurate perception and reliable hardware, the system cannot perform without effective navigation and control. The subteam ensures that the aircraft can move intentionally, respond to mission inputs, and operate consistently in real-world conditions.</p>
+                <img src={picture}></img>
+              </section>
+            </div>
           </div>
           <div className="object-recognition-container" id="obj-rec">
             <h2 className="object-recognition--title">Object Recognition</h2>
@@ -293,27 +353,45 @@ function Team() {
                 image={ryan}
                 name="Ryan Tran"
                 role="Object Recognition Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Ryan was promoted to a lead position this season after contributing as a member of the Object Recognition team last year. He is a Computer Engineering student with experience in computer vision, autonomous systems, and robotics frameworks such as ROS 2. Through his continued involvement in the project, he has developed a strong understanding of how perception systems support autonomous mission execution.",
+                  "As the Object Recognition Lead, Ryan is responsible for overseeing the integration of hardware and software used for object detection and mapping, ensuring that the system performs reliably during mission operations. He manages the implementation of perception algorithms on onboard computing platforms and works to ensure that detection outputs align with navigation and control requirements. His role focuses on enabling accurate environmental awareness and supporting the drone’s ability to complete mission objectives through reliable perception.",
+                  "In his free time, Ryan enjoys playing sports, video games, weightlifting, and spending time with friends. He is excited to continue advancing the team’s autonomy capabilities and looks forward to competing in Tulsa, Oklahoma.",
+                ]}
               />
             </section>
             <section className="obj-rec-members">
-                <MemberCard image={picture} name="Michael Castillo" role="Object Recognition - Machine Learning/ Integration" />
+                <MemberCard image={ michael } name="Michael Castillo" role="Object Recognition - Machine Learning/ Integration" />
                 <MemberCard image={picture} name="Len Sakimukai" role="Object Recognition - Mapping/ Integration" />
                 <MemberCard image={picture} name="Areg Hovumyan" role="Object Recognition - Machine Learning/ Integration" />
-                <MemberCard image={picture} name="Justin Drake Santos" role="Object Recognition - Mapping/ Website Developer" />
+                <MemberCard image={ justin } name="Justin Drake Santos" role="Object Recognition - Mapping/ Website Developer" />
                 <MemberCard image={picture} name="Dat Nguyen" role="Object Recognition - Machine Learning/ Integration" />
                 <MemberCard image={picture} name="Jimmy Nguyen" role="Object Recognition - Machine Learning / Integration" />
 
             </section>
+            <div className="obj-rec-about">
+              <section className="obj-rec-sec-one">
+                <p>The Object Recognition subteam is responsible for enabling the aircraft to interpret its environment and identify mission targets. This includes developing image processing pipelines, object detection models, and mapping capabilities that process data from onboard sensors. The system identifies targets, determines their location, and provides this information to other subsystems for decision-making.</p>
+                <img src={picture}></img>
+              </section>
+              <section className="obj-rec-sec-two">
+                <img src={picture}></img>
+                <p>Object Recognition plays a key role in mission execution by providing the information needed for navigation and payload delivery. Accurate detection and classification directly impact the system’s ability to complete tasks successfully. The subteam connects perception to action, allowing the aircraft to make informed decisions based on its surroundings.</p>
+              </section>
+            </div>
           </div>
           <div className="obstacle-avoidance-container" id="obs-avo">
             <h2 className="obstacle-avoidance--title">Obstacle Avoidance</h2>
             <section className="obs-avo-lead">
               <FlipCard
-                image={kevin}
+                image={ picture }
                 name="Kevin Kopcinski"
                 role="Obstacle Avoidance Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText={[
+                  "Kevin filled the lead position this season after contributing as a member of the Obstacle Avoidance team in the previous year. He is a Computer Science and Physics student with experience in microcontrollers, robotics frameworks such as ROS 2, and hands-on work with drones over the past several years. His background provides a strong foundation in both the hardware and software aspects of real-time autonomous systems.",
+                  "As the Obstacle Avoidance Lead, Kevin is responsible for coordinating the development and testing of the drone’s obstacle detection and avoidance capabilities. He organizes test flights, assigns tasks, and designs the data processing pipeline that enables sensor data to be interpreted and used for real-time decision-making. His team processes LiDAR data and ensures it is properly communicated to the flight controller, allowing the aircraft to safely navigate its environment.",
+                  "In his free time, Kevin enjoys spending time with friends and flying his own drone. He is excited to continue developing the team’s autonomy systems and looks forward to competing in Tulsa, Oklahoma.",
+                ]}
               />
             </section>
             <section className="obs-avo-members">
@@ -321,15 +399,29 @@ function Team() {
                 <MemberCard image={picture} name="Pawel Chowdhury" role="Obstacle Avoidance" />
                 <MemberCard image={picture} name="Hope Gomez" role="Obstacle Avoidance/ Web Developer" />
             </section>
+            <div className="obs-avo-abou">
+              <section className="obs-avo-sec-one">
+                <img src={picture}></img>
+                <p>The Obstacle Avoidance subteam develops the systems that allow the aircraft to safely navigate dynamic environments. Using sensor inputs such as LiDAR, the team processes environmental data and generates real-time path adjustments to prevent collisions. This includes obstacle detection, data filtering, and dynamic pathfinding.</p>
+              </section>
+              <section className="obs-avo-sec-two">
+                <p>Their work ensures that the aircraft can adapt to unexpected conditions without interrupting mission execution. Obstacle avoidance is critical for maintaining safety and enabling true autonomy, as it allows the system to operate beyond controlled or pre-mapped environments. Without this capability, the aircraft would be limited in both reliability and real-world applicability.</p>
+                <img src={picture}></img>
+              </section>
+            </div>
           </div>
           <div className="systems-container" id="sys">
             <h2 className="systems--title">Systems</h2>
             <section className="systems-lead">
               <FlipCard
-                image={ben}
+                image={ picture }
                 name="Thien Nam Anh Vu"
                 role="Systems Lead"
-                backText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                backText= {[
+                  "Ben was promoted to a lead position this season after contributing as both a pilot and a Systems Engineering team member in the previous year. He is an Industrial Engineering student with experience in coordination, process management, and system-level organization. In addition to his academic background, he is a certified pilot and has professional experience in photography and videography, giving him a unique perspective on both technical and visual aspects of the project. ",
+                  "As the Systems Engineering Lead, Ben is responsible for coordinating team efforts across all subteams, ensuring consistent progress toward major deadlines and competition deliverables. He assigns tasks, facilitates communication between teams, and supports the development of documentation such as the team website and technical design report. His role focuses on maintaining alignment across the project while also contributing to the team’s visual media and presentation materials.",
+                  "In his free time, Ben enjoys flying drones, photography, and videography. He is excited to help bring the team’s work together and looks forward to competing in Tulsa, Oklahoma.",
+                ]}
               />
             </section>
             <section className="systems-members">
@@ -338,9 +430,19 @@ function Team() {
                 <MemberCard image={picture} name="Mia Zavala" role="Systems Member" />
                 <MemberCard image={picture} name="Matthew Martinez" role="Systems Member" />
             </section>
+            <div className="systems-about">
+              <section className="sys-sec-one">
+                <p>The Systems Engineering subteam is responsible for maintaining alignment across the entire project, ensuring that all subteams progress together and remain consistent with overall objectives. This includes managing schedules, tracking deliverables, maintaining documentation, and overseeing competition requirements such as the technical design report and team website.</p>
+                <img src={picture}></img>
+              </section>
+              <section className="sys-sec-two">
+                <img src={picture}></img>
+                <p>Their role is critical in preventing disconnects between teams and identifying integration risks early in development. By maintaining visibility across all subsystems, Systems Engineering ensures that design decisions remain compatible and that the final system comes together as intended. The team enables steady progress and coordination, allowing technical work across the project to translate into a cohesive and competition-ready system.</p>
+              </section>
+            </div>
           </div>
           <div className="advisors-container" id="advisors">
-            <h2 className="advisors--title">Advisors</h2>
+            <h2 className="advisors--title">Advisors/Mentors</h2>
             <div className="advisors">
                 <FlipCard 
                     image = { bhandari }
@@ -351,7 +453,7 @@ function Team() {
             </div>
             <div className="mentors">
                 <FlipCard
-                    image = { joshua }
+                    image = { picture }
                     name = "Joshua Estrada"
                     role = "Software Mentor"
                     backText = {[
@@ -363,7 +465,7 @@ function Team() {
                     ]}
                 />
                 <FlipCard
-                    image = { max }
+                    image = { picture }
                     name = "Max Gross"
                     role = "Software Mentor"
                     backText = {[
@@ -373,6 +475,26 @@ function Team() {
 
                         "Outside of the lab, Max enjoys surfing and competitive gaming, having earned a national title in Team Fortress 2. He's motivated by the interdisciplinary nature of the project and excited to see the team's collective effort come together on competition day."
                     ]}
+                />
+                <FlipCard
+                  image = { picture }
+                  name = "Leo Chen"
+                  role = "VIS Mentor"
+                  backText = {[
+                    "",
+                    "",
+                    "",
+                  ]}
+                />
+                <FlipCard
+                  image = { picture }
+                  name = "Matthew Romero"
+                  role = "Structures Mentor"
+                  backText = {[
+                    "",
+                    "",
+                    "",
+                  ]}
                 />
             </div>
           </div>
