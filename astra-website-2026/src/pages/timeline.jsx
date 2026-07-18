@@ -74,15 +74,20 @@ function Timeline() {
 
   return (
     <div className="timeline-container">
-      <div className="timeline-hero">
-        <div className="timeline-container--title">
-          <h1>Our Timeline</h1>
-          <p>
-            A chronological snapshot of our team's progress, decisions, and
+      <section className="timeline-hero">
+        <div className="timeline-hero__grid" aria-hidden="true" />
+        <p className="timeline-eyebrow">Bronco ASTRA Timeline</p>
+        <h1>
+          See how we
+          <br />
+          <em>progressed.</em>
+        </h1>
+        <p className="timeline-hero__copy">
+          A chronological snapshot of our team's progress, decisions, and
             engineering milestones as we prepare for SUAS 2026
-          </p>
-        </div>
-      </div>
+        </p>
+      </section>
+
 
       <div className="timeline-filter-container">
         <h3>Filter by Subteam:</h3>

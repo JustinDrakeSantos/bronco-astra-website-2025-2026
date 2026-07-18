@@ -1,5 +1,5 @@
 import '../styles/index.css'
-import heroVideo from '../assets/hero-section-place-holder.mp4'
+import heroVideo from '../assets/astra-broll-footage.mov'
 
 function Home() {
     return (
@@ -31,7 +31,7 @@ function Home() {
                 </div>
                 <div className="home-page--interview-container">
                     <div className="interview-video">
-                        INTERVIEW WITH ASHTON AND DANIELLE
+                        <iframe width="800" height="655" src="https://www.youtube.com/embed/noHoWuwFhBo?si=R4XX7UZjZFSJMFEP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                     <div className="interview-description-message">
                         <h2>A word from our Project Leads, Ashton and Danielle.</h2>

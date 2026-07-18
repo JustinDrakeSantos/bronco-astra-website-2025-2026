@@ -7,12 +7,14 @@ import Testing from './testing.jsx'
 import Tips from './tips.jsx'
 import Navbar from '../components/navbar.jsx'
 import Footer from '../components/footer.jsx'
+import ScrollToTop from '../components/scrollToTop.jsx'
 
 function App() {
 
   return (
     <>
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/team' element={<Team/>}/>
