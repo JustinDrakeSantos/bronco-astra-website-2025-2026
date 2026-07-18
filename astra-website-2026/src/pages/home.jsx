@@ -1,5 +1,5 @@
 import '../styles/index.css'
-import heroVideo from '../assets/astra-broll-footage.mov'
+import heroVideo from '../assets/astra-broll-footage.mp4'
 
 function Home() {
     return (
