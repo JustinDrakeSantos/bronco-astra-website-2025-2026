@@ -256,3 +256,39 @@ h1 {
     display: none;
   }
 }
+
+.flight-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgb(0 0 0 / 70%);
+}
+
+.flight-modal {
+  position: relative;
+  width: min(600px, 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  background: #fff;
+  color: #111;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  border: 0;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.details-link {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
