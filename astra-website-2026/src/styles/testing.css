@@ -111,6 +111,7 @@ body {
   line-height: 0.98;
 
   letter-spacing: -0.055em;
+   animation: tips-rise 0.75s both;
 }
 
 
@@ -134,6 +135,7 @@ body {
   font-size: clamp(1rem, 1.6vw, 1.18rem);
 
   line-height: 1.7;
+   animation: tips-rise 0.75s 0.12s both;
 }
 
 .topbar {
@@ -146,6 +148,7 @@ body {
   padding: 14px 5%;
   background: #0f0f0f;
   border-bottom: 1px solid #2a2a2a;
+  
 }
 
 .brand {

@@ -1,9 +1,15 @@
 import "../styles/testing.css";
 
 const testFlights = [
-  { id: 1, date: "July 14, 2026", tested: "Autonomous landing system", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/1" },
-  { id: 2, date: "June 28, 2026", tested: "High-altitude engine restart", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/2" },
-  { id: 3, date: "May 9, 2026", tested: "Flight-control software update", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/3" },
+  { id: 1, date: "March 30, 2026", tested: "First Test Flight with Sentinel", videoId: "4_eZP47MgGU", detailsUrl: "/test-flights/1" },
+  { id: 2, date: "March 31, 2026", tested: "Comp Entry", videoId: "Y97niCa6mX0", detailsUrl: "/test-flights/2" },
+  { id: 3, date: "April 11, 2026", tested: "Limit Test", videoId: "bkZWvAHjOlw", detailsUrl: "/test-flights/3" },
+  {id: 4, date: "April 18 2026", tested: "No YAW", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/4" },
+  {id: 5, date: "April 22, 2026", tested: "AUTO Mission with No YAW and in Stabilized Mode", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/5" },
+  {id: 6, date: "April 25, 2026", tested: "Payload and Object Recognition Test", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/6" },
+  {id: 7, date: "May 2, 2026", tested: "Object Recognition's Longest Test Flight", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl:"/test-flights/7"},
+  {id : 8, date: "May 31, 2026", tested: "3 Consecutive Payload Test Drops", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/8"},
+  {id: 9, date: "June 6, 2026", tested: "Speed and Endurance Test", videoId: "YOUR_YOUTUBE_VIDEO_ID", detailsUrl: "/test-flights/9"},
 ];
 
 export default function Testing() {
@@ -19,7 +25,7 @@ export default function Testing() {
   <h1>
     Test what
     <br />
-    <em>we build.</em>
+    <em>We build.</em>
   </h1>
 
   <p className="testing-hero__copy">
