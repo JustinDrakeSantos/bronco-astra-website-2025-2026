@@ -18,9 +18,7 @@ function Home() {
           <div className="hero-overlay"></div>
 
           <div className="hero-content">
-            <p className="hero-eyebrow">
-              CAL POLY POMONA • ASTRA
-            </p>
+            <p className="hero-eyebrow">CAL POLY POMONA • ASTRA</p>
 
             <h1>BUILD. FLY. INNOVATE.</h1>
 
@@ -82,7 +80,12 @@ function Home() {
             ></iframe>
           </div>
           <div className="interview-description-message">
-            <h2>A word from our Project Leads, Ashton and Danielle.</h2>
+            <h2>
+              From the People Leading the Project Ashton and Danielle offer a
+              behind-the-scenes look at the project, discussing its purpose, the
+              team’s dedication, and what they hope it will achieve moving
+              forward.
+            </h2>
           </div>
         </div>
       </div>
