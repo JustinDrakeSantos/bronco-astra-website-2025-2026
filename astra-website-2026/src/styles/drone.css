@@ -1,3 +1,80 @@
+/* ==========================================
+   LARGE DESKTOPS (1600px+)
+========================================== */
+
+@media (min-width: 1600px) {
+
+  .drone-page__title-hero {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+
+  .drone-page__title-hero > .drone-model-container {
+    width: min(52vw, 900px);
+  }
+
+}
+
+/* ==========================================
+   LAPTOPS
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .drone-page__title-hero > .drone-model-container {
+    width: 48vw;
+  }
+
+  .drone-section__header {
+    gap: 20px;
+    padding: 24px 36px;
+  }
+
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 900px) {
+
+  .drone-page__title-hero {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .drone-page__title-hero-eyebrow,
+  .drone-page__title-hero h1,
+  .drone-page__title-hero__copy {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .drone-page__title-hero > .drone-model-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    top: auto;
+    margin-top: 40px;
+  }
+
+}
+
+/* ==========================================
+   MOBILE PHONES (600px and below)
+========================================== */
+
+@media (max-width: 600px) {
+
+  /* Prevent horizontal scrolling */
+  .drone-page-container,
+  .drone-page--hero-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 .drone-page-container {
   display: flex;
   flex-direction: column;
@@ -427,4 +504,47 @@
     width: 100%;
     height: 390px;
   }
+}
+
+.drone-callout h2 {
+  margin: 0;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.drone-callout h2 {
+  font-size: clamp(2.15rem, 4vw, 4rem);
+}
+
+.drone-callout {
+  position: relative;
+  padding: 74px max(7vw, 24px);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+  background: #005030;
+}
+
+.drone-callout h2 {
+  max-width: 800px;
+}
+
+.drone-callout > p:not(.drone-eyebrow) {
+  max-width: 650px;
+  margin: 25px 0 0;
+  color: rgba(246, 241, 232, 0.78);
+  line-height: 1.7;
+}
+
+.drone-callout__line {
+  position: absolute;
+  right: -8vw;
+  bottom: -13vw;
+  width: 58vw;
+  height: 58vw;
+  border: 1px solid rgba(164, 214, 94, 0.6);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 58px rgba(164, 214, 94, 0.09),
+    0 0 0 116px rgba(164, 214, 94, 0.06);
 }

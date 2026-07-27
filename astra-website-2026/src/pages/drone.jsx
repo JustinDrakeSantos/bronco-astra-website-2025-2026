@@ -381,7 +381,7 @@ function Drone() {
           competition. Every subsystem — airframe, avionics, propulsion, and
           payload — is engineered to work as one integrated system.
         </p>
-        <div className="drone-model-container" ref={modelContainerRef}>
+        <div className="drone-model-container" ref={modelContainerRef} aria-label="3D model of Sentinel Autonomous Drone">
           <Canvas
             dpr={1}
             camera={{ fov: 45 }}
@@ -401,7 +401,7 @@ function Drone() {
                   intensity={1.2}
                   shadows={false}
                 >
-                  <Model scale={5.0} />
+                  <Model scale={window.innerWidth < 600 ? 3.8 : 5.0} />
                 </Stage>
               </PresentationControls>
             </Suspense>
@@ -423,6 +423,23 @@ function Drone() {
           />
         ))}
       </div>
+      <section className="drone-callout">
+        {" "}
+        <p className="drone-eyebrow">Sentinel</p>{" "}
+        <h2>
+          {" "}
+          Built to <em>Search. Detect. Deliver.</em>{" "}
+        </h2>{" "}
+        <p>
+          {" "}
+          Sentinel brings together autonomous navigation, real-time object
+          detection, obstacle awareness, and precision payload delivery into one
+          integrated aerial platform. Every subsystem is designed to work
+          together toward a single mission: finding, identifying, and responding
+          to targets autonomously.{" "}
+        </p>{" "}
+        <div className="drone-callout__line" aria-hidden="true" />{" "}
+      </section>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import sponsor from '../assets/lockheed-martin-logo.png';
 function Footer () {
     return (
         <>
-            <div className="footer-container">
+            <div className="footer-container" id="footer">
                 <div className="sponsor-section">
                     <h1>
                         Proudly Sponsored by:

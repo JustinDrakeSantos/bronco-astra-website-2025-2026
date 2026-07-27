@@ -13,6 +13,7 @@ import michelle from "../assets/Michelle Ramirez.JPG";
 import systems from "../assets/systems-group-photo.JPG";
 import mia from "../assets/mia.JPG";
 import allison from "../assets/allison.JPG";
+import systems2 from "../assets/systems2.JPG";
 
 // UAV Design Team
 import stephen from "../assets/stephen.JPG";
@@ -24,6 +25,7 @@ import sullivan from "../assets/uavd-sullivan.JPG";
 import kenneth from "../assets/uavd-kenneth.JPG";
 import jack from "../assets/uavd-jack.JPG";
 import uavD from "../assets/uav-design-team.JPG";
+import uavD2 from "../assets/uavd2.jpg";
 
 // GNC Team
 import waamiq from "../assets/Waamiq Sharrar.JPG";
@@ -48,6 +50,7 @@ import aro from "../assets/aro.JPG";
 import dat from "../assets/dat.JPG";
 import len from "../assets/len.JPG";
 import objectRec from "../assets/object-recognition-team.JPG";
+import objectRec2 from "../assets/obj-rec.JPG";
 
 // Obstacle Avoidance Team
 import kevin from "../assets/kevin.JPG";
@@ -64,6 +67,7 @@ import joseAM from "../assets/Jose_A.M.JPG";
 import harrison from "../assets/harrisonC.JPG";
 import alex from "../assets/alexS.JPG";
 import payload from "../assets/payload-team.JPG";
+import payload2 from "../assets/payload2.jpg";
 
 // Advisor
 import bhandari from "../assets/bhandari-advisor.png";
@@ -178,26 +182,26 @@ function Team() {
     <>
       <div className="team-page--shell">
         <section className="team-page__header">
-              <div className="team-hero__grid" aria-hidden="true"/>         
-              <div className="team-hero__content">
-                <div className="team-hero__text">
-                  <p className="team-eyebrow">Bronco ASTRA Members</p>
-                <h1 className="team-hero__title">
-                  Meet the Minds Behind
-                  <br />
-                  <em>ASTRA</em>
-                </h1>
-                <p className="team-hero__copy">
-                  The Bronco ASTRA team is composed of a diverse group of
-                  students from various engineering disciplines, each bringing
-                  their unique skills and perspectives to the project.
-                </p>
-                </div>
-                <div className="team-hero__image">
-                  <img src={team} alt="Bronco ASTRA Team" />
-                </div>
-              </div>
-            </section>
+          <div className="team-hero__grid" aria-hidden="true" />
+          <div className="team-hero__content">
+            <div className="team-hero__text">
+              <p className="team-eyebrow">Bronco ASTRA Members</p>
+              <h1 className="team-hero__title">
+                Meet the Minds Behind
+                <br />
+                <em>ASTRA</em>
+              </h1>
+              <p className="team-hero__copy">
+                The Bronco ASTRA team is composed of a diverse group of students
+                from various engineering disciplines, each bringing their unique
+                skills and perspectives to the project.
+              </p>
+            </div>
+            <div className="team-hero__image">
+              <img src={team} alt="Bronco ASTRA Team" />
+            </div>
+          </div>
+        </section>
         <div className="team-page--grid">
           <aside className="sidenav-container" aria-label="On This Page">
             <h2>On This Page</h2>
@@ -356,7 +360,7 @@ function Team() {
                     every other subteam’s work to be successfully integrated and
                     operated in flight.
                   </p>
-                  <img src={picture}></img>
+                  <img src={uavD2}></img>
                 </section>
               </div>
             </div>
@@ -418,7 +422,7 @@ function Team() {
                     iteration to improve reliability under real flight
                     conditions.
                   </p>
-                  <img src={picture}></img>
+                  <img src={payload2}></img>
                 </section>
                 <section className="payload-sec-two">
                   <img src={payload}></img>
@@ -573,7 +577,7 @@ function Team() {
                     identifies targets, determines their location, and provides
                     this information to other subsystems for decision-making.
                   </p>
-                  <img src={picture}></img>
+                  <img src={objectRec2}></img>
                 </section>
                 <section className="obj-rec-sec-two">
                   <img src={objectRec}></img>
@@ -688,7 +692,7 @@ function Team() {
                     overseeing competition requirements such as the technical
                     design report and team website.
                   </p>
-                  <img src={[picture]}></img>
+                  <img src={[systems2]}></img>
                 </section>
                 <section className="sys-sec-two">
                   <img src={systems}></img>
@@ -740,6 +744,20 @@ function Team() {
             </div>
           </div>
         </div>
+        <section className="team-callout">
+          <p className="team-callout__eyebrow">Build Community</p>
+
+          <h2>Great aircrafts are built by great teams.</h2>
+
+          <p>
+            Our team brings together students from different engineering
+            disciplines to design, build, test, and fly autonomous aerial
+            systems. Every member contributes a unique perspective to the
+            mission.
+          </p>
+
+          <div className="team-callout__line" aria-hidden="true" />
+        </section>
       </div>
     </>
   );
