@@ -270,3 +270,5 @@ const resources = [
     tags: ["Training", "Datasets", "Unity"],
   },
 ];
+
+export default resources;
