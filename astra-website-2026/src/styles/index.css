@@ -473,9 +473,10 @@ nav a:hover, nav a:active {
   margin: 0;
   color: #F2EEE8;
   font-family: 'Zalando Sans SemiExpanded', sans-serif;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1.2rem, 4vw, 2rem);
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Decorative circle */
